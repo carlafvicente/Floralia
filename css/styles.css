@@ -1,0 +1,297 @@
+/*Hoja de estilos Proyecto Floralia*/
+
+@font-face {
+    font-family: "Cambo";
+    src: url(fonts/cambo.woff2)
+}
+
+@font-face {
+    font-family: "Trirong400";
+    src: url(fonts/trirongRegular.woff2)
+}
+
+@font-face {
+    font-family: "Trirong500";
+    src: url(fonts/trirongMedium.woff2)
+}
+
+html{
+    display: block;
+    background-color: white;
+    font-family: "Trirong500", "Times New Roman", serif;
+    font-size: 14px;
+    text-align: center;
+}
+
+body{
+    margin: 0;
+}
+
+header{
+    background-color: #94d6aa;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr;
+    column-gap: 5%;
+    padding-left: 15%;
+    padding-right: 15%;
+    border-bottom: 1px solid #065731;
+}
+
+div.titulo{
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+
+#logo{
+    margin: 0;
+}
+
+#header-title{
+    font-family: "Trirong400", "Times New Roman", serif;
+    font-size: 24px;
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+nav.main-menu{
+    font-size: 16px;
+    display: flex;
+    list-style: none;
+    align-content: center;
+    justify-content: space-around;
+    align-items: center;
+    padding-inline-start: 0;
+}
+
+div.autenticacion{
+    font-size: 14px;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+#log-in{
+    color: #065731;
+    border-color: #065731;
+    border-radius: 20%;
+    padding: 0.3em;
+    margin-right: 5px;
+}
+
+#sign-up{
+    color: white;
+    padding: 0.3em;
+    border-width: 1px;
+    border-radius: 20%;
+    background-color: #065731;
+    margin-left: 5px;
+}
+
+main{
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+main p{
+    text-align: justify;
+    line-height: 1.7em;
+    padding-top: 15px;
+    margin: 0;
+}
+
+main h1, h2{
+    font-family: "Trirong400", "Times New Roman", serif;
+    padding-top: 15px;
+    margin: 0px;
+}
+
+h1{
+    font-size: 27px;
+}
+
+h2{
+    font-size: 22px;
+}
+
+.hero-img{
+    height: 40vh;
+    background-image: url(../img/narcissusAsturiensis_IgnacioFdezVillar.jpg);
+    background-size: cover;
+    background-position: center 30%;
+    background-repeat: no-repeat;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: left;
+    align-items: flex-end;
+}
+
+.hero-img h1{
+    background-color: white;
+    text-align: left;
+    padding-top: 10px;
+    padding-right: 20px;
+    margin: 0;
+}
+
+.subhero{
+    background-color: #94d6aa;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0px;
+    margin-top: 20px;
+}
+
+.subhero-img{
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 25px;
+    margin-right: 25px;
+    height: 25vh;
+    width: 25vh;
+    object-fit: cover;
+    border: 1px solid #065731;
+}
+
+.subhero-text{
+    justify-items: left;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 25px;
+}
+
+.subhero-text h1{
+    margin: 0;
+}
+
+.discover{
+    padding: 10px 0;
+}
+
+.discover-flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: flex-start;
+    margin: 10px 0px;
+}
+
+button.carrousel{
+    color: white;
+    font-size: 18px;
+    background-color: #065731;
+    border-radius: 20%;
+}
+
+#carrousel{
+    margin: 0px 25px;
+}
+
+.card{
+    background-color: #B5A4FE;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+.card-img{
+    height: 250px;
+    width: 250px;
+    border: 1px solid #065731;
+    margin-left: 15px;
+}
+
+.card-img img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.card-text{
+    text-align: center;
+    width: 180px;
+}
+
+.card-text p{
+    text-align: center;
+    padding-top: 10px;
+}
+
+#card-1{
+    display: none;
+}
+
+#card-2{
+    display: none;
+}
+
+#card-3{
+    display: none;
+}
+
+.sign-up{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid #065731;
+    margin-top: 20px;
+    height: 180px;
+}
+
+.sign-up h1{
+    padding: 0;
+}
+
+.register{
+    font-size: 20px;
+    color: white;
+    padding: 0.5em 0.8em;
+    border-width: 1px;
+    border-radius: 25%;
+    background-color: #065731;
+    margin-left: 2.5vw;
+}
+
+footer{
+    background-color: #94d6aa;
+    font-size: 16px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    border-top: 1px solid #065731;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+div.footer-column{
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-top: 10px;
+    padding-bottom: 15px;
+}
+
+div.footer-column *{
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.footer-column:nth-of-type(3) a{
+    margin:0;
+  }
+
+img.validation{
+    width: 89px;
+    height: 31px;
+}

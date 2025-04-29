@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Floralia</title>
+        <link rel="stylesheet" type="text/css" href="css/styles.css" media="screen" />
+        <script></script>
+    </head>
+
+    <body>
+
+        <header>
+            <div class="titulo">
+                <figure id="logo">
+                    <img src="" alt="Logo Floralia">
+                </figure>
+                <h1 id="header-title">Floralia</h1>
+            </div>
+            
+            <nav class="main-menu">
+                <a href="pruebas.html">Pruebas</a>
+                <a href="herbolario.html">Herbolario</a>
+                <a href="foro.html">Foro</a>
+                <a href="about.html">Orígenes</a>
+            </nav>
+
+            <div class="autenticacion">
+                <a id="log-in">Iniciar sesión</a>
+                <a id="sign-up">Registrarse</a>
+            </div>
+        </header>
+
+        <main>
+            <section class="hero">
+                <div class="hero-img">
+                    <h1>¿Qué es Floralia?</h1>
+                </div>
+                <div class="hero-text">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut quis nunc nulla. Cras dolor neque, aliquet ut auctor pharetra, mattis at elit. Sed blandit purus eu mauris sodales, vitae feugiat tortor vestibulum. Nulla rutrum egestas diam ac mattis. Proin at sapien sapien. Mauris ullamcorper orci sit amet nisl cursus, a sagittis ante iaculis. Vivamus tristique sapien ac tempor lobortis. Vestibulum tristique egestas urna eu varius. Morbi vehicula magna eget tincidunt consequat. Morbi maximus mi dolor, eget condimentum tortor accumsan sed. Sed pharetra purus sed erat pretium, vitae suscipit quam iaculis. Proin vulputate odio ut convallis rutrum. Fusce imperdiet elit id metus auctor, ac euismod neque accumsan. Vestibulum sed egestas elit, aliquet hendrerit libero.
+                    </p>
+                    <p>Fusce congue tristique ante, vel viverra mi malesuada eget. Phasellus sollicitudin quam ut volutpat condimentum. Pellentesque at turpis ipsum. Pellentesque pretium finibus augue id semper. Suspendisse potenti. Sed vitae posuere neque. Phasellus efficitur dui in lacus lobortis condimentum.
+                    </p>
+                </div>
+            </section>
+
+            <section class="subhero">
+                <figure class="subhero-img">
+                    <img src="" alt="subhero-img">
+                </figure>
+                <div class="subhero-text">
+                    <h1>Ponte a Prueba</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut quis nunc nulla. Cras dolor neque, aliquet ut auctor pharetra, mattis at elit. Sed blandit purus eu mauris sodales, vitae feugiat tortor vestibulum. Nulla rutrum egestas diam ac mattis. Proin at sapien sapien. Mauris ullamcorper orci sit amet nisl cursus, a sagittis ante iaculis. Vivamus tristique sapien ac tempor lobortis. Vestibulum tristique egestas urna eu varius. Morbi vehicula magna eget tincidunt consequat. Morbi maximus mi dolor, eget condimentum tortor accumsan sed. Sed pharetra purus sed erat pretium, vitae suscipit quam iaculis.
+                    </p>
+                </div>
+            </section>
+
+            <section class="discover">
+                <h1>Descubre el Herbolario</h1>
+                
+                <div class="discover-flex">
+                    <button onClick="showPrevious()" class="carrousel"><</button>
+
+                    <div id="carrousel">
+                        <div class="card" id="card-0">
+                            <div class="card-text">
+                                <h2>Arce</h2>
+                                <p>Acer Campestre</p>
+                            </div>
+                            <figure class="card-img">
+                                <img src="img/acerCampestre.jpg" alt="Hoja de arce">
+                            </figure>
+                        </div>
+
+                        <div class="card" id="card-1">
+                            <div class="card-text">
+                                <h2>Flor de viuda</h2>
+                                <p>Trachelium Caeruleum</p>
+                            </div>
+                            <figure class="card-img">
+                                <img src="img/tracheliumCaeruleum.jpg" alt="Flor de viuda">
+                            </figure>
+                        </div>
+
+                        <div class="card" id="card-2">
+                            <div class="card-text">
+                                <h2>Aliso</h2>
+                                <p>Alnus Lusitanica</p>
+                            </div>
+                            <figure class="card-img">
+                                <img src="img/alnusLusitanica.jpg" alt="Hoja de aliso">
+                            </figure>
+                        </div>
+
+                        <div class="card" id="card-3">
+                            <div class="card-text">
+                                <h2>Cornejo</h2>
+                                <p>Cornus Sanguinea</p>
+                            </div>
+                            <figure class="card-img">
+                                <img src="img/cornusSanguinea.jpg" alt="Fruto de cornejo">
+                            </figure>
+                        </div>
+                    </div>
+
+                    <button onClick="showNext()" class="carrousel">></button>
+                </div>
+            </section>
+
+            <section class="sign-up">
+                <h1>¡Únete ahora!</h1>
+                <a class="register">Registrarse</a>
+            </section>
+        </main>
+
+        <footer>
+            <div class="footer-column">
+                <a href="contact.html">Contacto</a>
+                <a>FAQ</a>
+                <a>Donaciones</a>
+            </div>
+
+            <div class="footer-column">
+                <a>Política de privacidad</a>
+                <a>Enlaces de interés</a>
+                <a>Proyectos asociados</a>
+            </div>
+
+            <div class="footer-column">
+                <p>Web validada por:</p>
+                <a>
+                    <img class="validation" src="" alt="HTML Validation">
+                </a>
+                <a href="https://jigsaw.w3.org/css-validator/check/referer">
+                    <img class="validation" src="https://jigsaw.w3.org/css-validator/images/vcss-blue" alt="Valid CSS!">
+                </a>
+                <a>
+                    <img class="validation" src="" alt="Accesibility Validation">
+                </a>
+            </div>
+        </footer>
+        
+        <script src="js/carrousel.js"></script>
+
+    </body>
+</html>

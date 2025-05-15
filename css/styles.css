@@ -16,11 +16,12 @@
 }
 
 html{
+    color: #0A0F0D;
     display: block;
-    background-color: white;
+    background-color: #D9EDE6;
     font-family: "Trirong500", "Times New Roman", serif;
     font-size: 14px;
-    text-align: center;
+    text-align: left;
 }
 
 body{
@@ -28,14 +29,19 @@ body{
 }
 
 header{
-    background-color: #94d6aa;
+    color: #D9EDE6;
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #065731;
+    border-bottom: 1px solid #94d6aa;
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
     grid-template-rows: 1fr;
     column-gap: 5%;
     padding-left: 15%;
     padding-right: 15%;
-    border-bottom: 1px solid #065731;
 }
 
 div.titulo{
@@ -49,11 +55,20 @@ div.titulo{
 }
 
 #header-title{
-    font-family: "Trirong400", "Times New Roman", serif;
+    color: #D9EDE6;
+    font-family: "Trirong500", "Times New Roman", serif;
     font-size: 24px;
+    text-decoration: none;
+    padding: 0 0.2em;
     margin-left: 20px;
     margin-top: 10px;
     margin-bottom: 10px;
+}
+
+#header-title:hover{
+    background-color: #94d6aa;
+    color: #0A0F0D;
+    text-decoration: none;
 }
 
 nav.main-menu{
@@ -66,6 +81,18 @@ nav.main-menu{
     padding-inline-start: 0;
 }
 
+nav.main-menu a{
+    color: #D9EDE6;
+    text-decoration: none;
+    padding: 0.4em;
+}
+
+nav.main-menu a:hover{
+    background-color: #94d6aa;
+    color: #0A0F0D;
+    text-decoration: none;
+}
+
 div.autenticacion{
     font-size: 14px;
     display: flex;
@@ -75,25 +102,28 @@ div.autenticacion{
 }
 
 #log-in{
-    color: #065731;
-    border-color: #065731;
-    border-radius: 20%;
+    color: #D9EDE6;
+    border: 1px solid #D9EDE6;
+    border-radius: 15%;
     padding: 0.3em;
+    margin-left: 5px;
     margin-right: 5px;
 }
 
 #sign-up{
-    color: white;
+    color: #D9EDE6;
     padding: 0.3em;
-    border-width: 1px;
-    border-radius: 20%;
-    background-color: #065731;
+    border: 1px solid #D9EDE6;
+    border-radius: 15%;
+    background-color: #56062B;
     margin-left: 5px;
 }
 
 main{
+    padding-top: 62px;
     padding-left: 15%;
     padding-right: 15%;
+    padding-bottom: 20px;
 }
 
 main p{
@@ -115,11 +145,14 @@ h1{
 
 h2{
     font-size: 22px;
+    margin-top: 15px;
 }
 
 .hero-img{
+    position: relative;
+    z-index: 1;
     height: 40vh;
-    background-image: url(../img/narcissusAsturiensis_IgnacioFdezVillar.jpg);
+    background-image: url(../img/narcissusAsturiensis.jpg);
     background-size: cover;
     background-position: center 30%;
     background-repeat: no-repeat;
@@ -131,8 +164,7 @@ h2{
 }
 
 .hero-img h1{
-    background-color: white;
-    text-align: left;
+    background-color: #D9EDE6;
     padding-top: 10px;
     padding-right: 20px;
     margin: 0;
@@ -174,6 +206,10 @@ h2{
     padding: 10px 0;
 }
 
+.discover h1{
+    text-align: center;
+}
+
 .discover-flex{
     display: flex;
     justify-content: center;
@@ -183,9 +219,9 @@ h2{
 }
 
 button.carrousel{
-    color: white;
+    color: #D9EDE6;
     font-size: 18px;
-    background-color: #065731;
+    background-color: #56062B;
     border-radius: 20%;
 }
 
@@ -194,7 +230,7 @@ button.carrousel{
 }
 
 .card{
-    background-color: #B5A4FE;
+    background-color: #B9A4D6;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -204,7 +240,7 @@ button.carrousel{
 .card-img{
     height: 250px;
     width: 250px;
-    border: 1px solid #065731;
+    border: 1px solid #56062B;
     margin-left: 15px;
 }
 
@@ -251,11 +287,11 @@ button.carrousel{
 
 .register{
     font-size: 20px;
-    color: white;
+    color: #D9EDE6;
     padding: 0.5em 0.8em;
     border-width: 1px;
-    border-radius: 25%;
-    background-color: #065731;
+    border-radius: 15%;
+    background-color: #56062B;
     margin-left: 2.5vw;
 }
 
@@ -263,35 +299,71 @@ footer{
     background-color: #94d6aa;
     font-size: 16px;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: center;
     align-content: center;
     border-top: 1px solid #065731;
-    padding-left: 20%;
-    padding-right: 20%;
+    padding-top: 15px;
+    padding-bottom: 20px;
 }
 
-div.footer-column{
-    height: inherit;
+footer *{
+    color:#0A0F0D;
+    text-decoration: none;
+    text-align: center;
+    padding: 0 10px;
+    margin: 0 10px;
+}
+
+footer a:hover{
+    background-color: #065731;
+    color: #D9EDE6;
+    text-decoration: none;
+}
+
+#error{
+    text-align: center;
+    height: 750px;
+    margin-top: 40px;
+}
+
+#error p{
+    text-align: center;
+}
+
+.pagina {
+    text-align: center;
+}
+
+.pagina h2{
+    text-align: left;
+}
+
+.titulo-pagina {
+    display: inline-block;
+    background-color: #56062B;
+    color: #D9EDE6;
+    padding: 3px 50px;
+}
+
+#enlaces a{
+    color:#56062B;
+}
+
+.autora-flex{
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    padding-top: 10px;
-    padding-bottom: 15px;
+    flex: 3fr 1fr;
+    justify-content: space-between;
+    align-items: flex-start;
 }
 
-div.footer-column *{
-    margin-left: 0;
+.icon-box{
+    height: 150px;
+    width: 150px;
     margin-right: 0;
-    margin-top: 10px;
-    margin-bottom: 10px;
 }
 
-.footer-column:nth-of-type(3) a{
-    margin:0;
-  }
-
-img.validation{
-    width: 89px;
-    height: 31px;
+.icon-box img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
 }
